@@ -1,56 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-greige: #E6E1D8;
-  --color-greige-warm: #F0ECE5;
-  --color-teal-deep: #123F40;
-  --color-teal-secondary: #245C5A;
-  --color-charcoal: #242A29;
-  --color-muted: #777873;
-  --color-card: #FAF9F6;
-  --color-border-custom: #D5D0C7;
-
-  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-pearl: #F7F2F4;
+  --color-mauve: #C99CAF;
+  --color-plum: #8E637D;
+  --color-rose: #E9DDE4;
+  --color-charcoal: #352D33;
+  --font-editorial: 'Newsreader', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 @layer base {
-  body {
-    background-color: #E6E1D8;
-    color: #242A29;
-    font-family: var(--font-sans);
-    line-height: 1.6;
-    letter-spacing: -0.01em;
-  }
-
-  h1, h2, h3, h4, .font-editorial {
-    font-family: var(--font-serif);
-    letter-spacing: -0.02em;
-  }
+  body { background: #F7F2F4; color: #352D33; font-family: var(--font-sans); line-height: 1.6; }
+  h1, h2, h3, h4, .font-editorial { font-family: var(--font-editorial); letter-spacing: -0.025em; }
+  button, a { transition: color .2s, background-color .2s, border-color .2s, transform .2s, box-shadow .2s; }
 }
 
-/* Smooth transition for theme and interactions */
-a, button {
-  transition-property: color, background-color, border-color, transform, opacity, box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-/* Custom scrollbar styling matching greige palette */
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
-
-::-webkit-scrollbar-track {
-  background: #E6E1D8;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #D5D0C7;
-  border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #B6B0A4;
-}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #F7F2F4; }
+::-webkit-scrollbar-thumb { background: #C99CAF; border-radius: 999px; }
